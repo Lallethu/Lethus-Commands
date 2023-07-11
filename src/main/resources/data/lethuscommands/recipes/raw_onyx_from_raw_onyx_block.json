@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "onyx",
+  "ingredients": [
+    {
+      "item": "lethuscommands:raw_onyx_block"
+    }
+  ],
+  "result": {
+    "item": "lethuscommands:raw_onyx",
+    "count": 9
+  }
+}

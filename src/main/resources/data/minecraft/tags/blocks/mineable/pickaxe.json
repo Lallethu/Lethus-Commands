@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "lethuscommands:onyx_ore",
+    "lethuscommands:onyx_deepslate_ore",
+    "lethuscommands:onyx_block",
+    "lethuscommands:raw_onyx_block"
+  ]
+}

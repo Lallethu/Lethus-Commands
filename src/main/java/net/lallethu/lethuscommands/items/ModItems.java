@@ -13,10 +13,10 @@ public class ModItems {
 			DeferredRegister.create(ForgeRegistries.ITEMS, LethusCommands.MOD_ID);
 
 	public static final RegistryObject<Item> ONYX = ITEMS.register("onyx",
-			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new Item(new Item.Properties().tab(LethusCommandsCreativeModeTab.LETHUS_TAB)));
 
 	public static final RegistryObject<Item> RAW_ONYX = ITEMS.register("raw_onyx",
-			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new Item(new Item.Properties().tab(LethusCommandsCreativeModeTab.LETHUS_TAB)));
 	public static void register (IEventBus eventBus) {
 		ITEMS.register(eventBus);
 	}

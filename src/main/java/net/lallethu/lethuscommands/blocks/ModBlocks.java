@@ -1,6 +1,7 @@
 package net.lallethu.lethuscommands.blocks;
 
 import net.lallethu.lethuscommands.LethusCommands;
+import net.lallethu.lethuscommands.items.LethusCommandsCreativeModeTab;
 import net.lallethu.lethuscommands.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -25,21 +26,28 @@ public class ModBlocks {
 					.Properties.of(Material.METAL)
 					.strength(7f)
 					.requiresCorrectToolForDrops()),
-			CreativeModeTab.TAB_MISC);
+			LethusCommandsCreativeModeTab.LETHUS_TAB);
 
 	public static final RegistryObject<Block> ONYX_ORE = registerBlock("onyx_ore",
 			() -> new Block(BlockBehaviour
 					.Properties.of(Material.STONE)
 					.strength(5f)
 					.requiresCorrectToolForDrops()),
-			CreativeModeTab.TAB_MISC);
+			LethusCommandsCreativeModeTab.LETHUS_TAB);
 
 	public static final RegistryObject<Block> ONYX_DEEPSLATE_ORE = registerBlock("onyx_deepslate_ore",
 			() -> new Block(BlockBehaviour
 					.Properties.of(Material.STONE)
 					.strength(6f)
 					.requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)),
-			CreativeModeTab.TAB_MISC);
+			LethusCommandsCreativeModeTab.LETHUS_TAB);
+
+	public static final RegistryObject<Block> RAW_ONYX_BLOCK = registerBlock("raw_onyx_block",
+			() -> new Block(BlockBehaviour
+					.Properties.of(Material.STONE)
+					.strength(6f)
+					.requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)),
+			LethusCommandsCreativeModeTab.LETHUS_TAB);
 
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
 		RegistryObject<T> toReturn = BLOCKS.register(name, block);

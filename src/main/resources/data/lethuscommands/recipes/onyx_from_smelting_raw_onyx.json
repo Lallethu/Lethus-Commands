@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "onyx",
+  "ingredient": {
+    "item": "lethuscommands:raw_onyx"
+  },
+  "result": "lethuscommands:onyx",
+  "experience": 1.7,
+  "cookingtime": 100
+}
